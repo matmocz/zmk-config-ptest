@@ -1,0 +1,6 @@
+if SHIELD_PINTECODD
+
+config ZMK_KEYBOARD_NAME
+    default "PintecOdd"
+
+endif
