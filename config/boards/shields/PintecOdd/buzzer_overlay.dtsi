@@ -1,0 +1,7 @@
+/ {
+    buzzer_pwm: pwm_buzzer {
+        compatible = "pwm-leds";
+        label = "PWM Buzzer";
+        pwms = <&pwm0 0 10000 0>;  // Adjust PWM pin, frequency, and duty cycle as needed
+    };
+};

@@ -47,4 +47,14 @@
             RC(7,0) RC(7,1) RC(7,2) RC(7,3) RC(7,4) RC(7,5)
             >;
     };
+
+    / {
+    buzzer_pin: buzzer {
+        compatible = "gpio-keys";
+        label = "Buzzer Pin";
+        gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;  // Pin 21 connected to your buzzer
+        debounce-ms = <10>;
+    };
+};
+
 };
