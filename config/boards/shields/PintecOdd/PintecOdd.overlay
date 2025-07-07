@@ -47,13 +47,4 @@
             RC(7,0) RC(7,1) RC(7,2) RC(7,3) RC(7,4) RC(7,5)
             >;
     };
-
-    // GPIO pin configuration for buzzer
-    buzzer_pin: buzzer {
-        compatible = "gpio-keys";
-        label = "Buzzer Pin";
-        gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;  // GPIO Pin 21 is for the buzzer
-        // Optional: Use a delay or a specific mode for buzzer
-        debounce-ms = <10>;
-    };
 };

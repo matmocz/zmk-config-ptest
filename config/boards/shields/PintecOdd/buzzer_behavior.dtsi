@@ -1,0 +1,8 @@
+/ {
+    buzzer_behavior {
+        compatible = "zmk,behavior-gpio-toggle";
+        label = "Buzzer Toggle";
+        gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;  // Define the GPIO pin for the buzzer
+        debounce-ms = <10>;  // Optional: debounce time for stability
+    };
+};
